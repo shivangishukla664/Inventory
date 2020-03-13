@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class WelcomeInventory
  */
-@WebServlet("WelcomeInventory")
+@WebServlet("/WelcomeInventory")
 public class WelcomeInventory extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -35,8 +35,8 @@ public class WelcomeInventory extends HttpServlet {
 		response.setContentType("text/html");
 		PrintWriter out=response.getWriter();
 		
-		String user=request.getParameter("user_name");
-		String pass=request.getParameter("password");
+		String user=request.getParameter("u");
+		String pass=request.getParameter("p");
 		
 		if(user.contentEquals("shivangi") && pass.contentEquals("shivi123"))
 		{
@@ -44,7 +44,7 @@ public class WelcomeInventory extends HttpServlet {
 			out.println("<h3> Welcome " +user +"</h3>");
 			out.println("</body></html>");*/
 			
-			RequestDispatcher rd=request.getRequestDispatcher("Index1");
+			RequestDispatcher rd=request.getRequestDispatcher("Home.html");
 			rd.forward(request,response);
 		}
 		else
@@ -54,8 +54,6 @@ public class WelcomeInventory extends HttpServlet {
 			rd.include(request, response);
 			//out.println("Login Failed!!!");
 		}
-		
-		
 		
 		
 	}
