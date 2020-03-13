@@ -1,0 +1,52 @@
+body{
+background-image: url("HomePic.jpg");
+}
+
+.topnav-right{
+float:right;
+}
+.d1{
+height:70px;
+font-family:Gill Sans;
+font-Size:60px;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: White;
+  color: black;
+}
+
+.topnav a.active {
+  background-color:white;
+  color: Black;
+}
+
+#footer{
+    background-color: burlywood;
+    color: orangered;
+    text-align: center;
+    width: 100%; 
+    position:fixed;
+    left:0;
+    bottom:0;
+ 
+}
+img{
+	height:100px;
+	width:100px;
+}
